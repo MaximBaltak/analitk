@@ -1,0 +1,15 @@
+@mixin tablet(){
+  @media screen and (max-width: 768px){
+    @content
+  }
+}
+.App{
+  display: grid;
+  grid-template-areas: "menu content";
+  height: 100%;
+  grid-template-columns: auto 1fr;
+  @include tablet {
+    grid-template-areas: "menu"
+                        "content";
+  }
+}

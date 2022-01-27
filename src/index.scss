@@ -1,0 +1,19 @@
+@import "App";
+html{
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  overflow-y: hidden;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include tablet{
+    overflow: auto;
+  }
+}
+#root{
+  height: 100%;
+}
